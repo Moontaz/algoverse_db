@@ -6,10 +6,8 @@ Dokumen ini berisi panduan langkah demi langkah untuk melakukan setup database d
 
 ### 1. Prasyarat (Install yang Dibutuhkan)
 
-Pastikan perangkat Anda sudah terinstall software berikut:
-
 - **Node.js**: Direkomendasikan menggunakan versi 18 atau yang lebih baru.
-- **MySQL**: Versi dan port bisa disesuaikan dengan konfigurasi sistem masing-masing developer.
+- **MySQL**: Versi dan port bisa disesuaikan dengan konfigurasi sistem.
 - **VS Code Extension**:
   - **Nama**: REST Client
   - **Publisher**: Huachao Mao
@@ -35,12 +33,10 @@ $ npm install
 
 ### 3. Setup File `.env`
 
-Buat sebuah file bernama `.env` di root direktori proyek. File ini akan berisi variabel lingkungan yang sensitif seperti kredensial database.
-
 **Contoh isi file `.env`:**
 
 ```env
-# Ganti 'user', 'password', 'localhost', '3306', dan 'algoverse_db'
+# Ganti 'user', 'password', 'localhost', '3306'
 # sesuai dengan konfigurasi MySQL Anda.
 DATABASE_URL="mysql://user:password@localhost:3306/algoverse_db"
 
