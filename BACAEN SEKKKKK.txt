@@ -1,0 +1,11 @@
+npm init -y
+
+npm install prisma --save-dev
+
+npm install express
+npm install prisma @prisma/client
+npx prisma init
+
+npx prisma migrate dev --name init
+
+npx prisma generate

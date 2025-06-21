@@ -1,0 +1,12 @@
+POST http://localhost:3000/api/records
+Content-Type: application/json
+
+{
+  "mading1_correct": 2,
+  "mading2_correct": 3,
+  "final_total_correct": 6,
+  "final_answers": [1,0,1,1,0,1,1,0,0,0]
+}
+
+###
+GET  http://localhost:3000/api/records

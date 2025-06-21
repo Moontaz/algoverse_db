@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model game_records {
+  id                  Int      @id @default(autoincrement())
+  record_time         DateTime @default(now()) @db.Timestamp(0)
+  mading1_correct     Int
+  mading2_correct     Int
+  final_total_correct Int
+  final_answers       Json
+}
